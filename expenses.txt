@@ -1,0 +1,2 @@
+2,contract,60000.0,education
+3,fanta,120.0,drink
