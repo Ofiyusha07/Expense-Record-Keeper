@@ -1,30 +1,30 @@
 package model;
 
-public class Expense {
-    private int id;
-    private String title;
-    private double amount;
+public class Expense extends Transaction {
+
     private String category;
 
     public Expense(int id, String title, double amount, String category) {
-        this.id = id;
-        this.title = title;
-        this.amount = amount;
+        super(id, title, amount);
         this.category = category;
     }
 
-    public int getId() { return id; }
-    public String getTitle() { return title; }
-    public double getAmount() { return amount; }
-    public String getCategory() { return category; }
+    public String getCategory() {
+        return category;
+    }
 
-    public void setTitle(String title) { this.title = title; }
-    public void setAmount(double amount) { this.amount = amount; }
-    public void setCategory(String category) { this.category = category; }
+    public void setCategory(String category) {
+        this.category = category;
+    }
 
+    // 🔥 Полиморфизм (переопределение метода)
     @Override
-    public String toString() {
+    public String getDetails() {
         return id + " | " + title + " | " + amount + " | " + category;
     }
 
+    @Override
+    public String toString() {
+        return getDetails();
+    }
 }
