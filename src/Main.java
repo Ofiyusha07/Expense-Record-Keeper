@@ -10,7 +10,8 @@ public class Main {
             System.out.println("\n1. Add Expense");
             System.out.println("2. View Expenses");
             System.out.println("3. Delete Expense");
-            System.out.println("4. Exit");
+            System.out.println("4. Update Expense");
+            System.out.println("5. Exit");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -35,6 +36,23 @@ public class Main {
                 System.out.print("Enter ID: ");
                 int id = scanner.nextInt();
                 service.deleteExpense(id);
+            }
+            else if (choice == 4) {
+                System.out.print("Enter ID to update: ");
+                int id = scanner.nextInt();
+                scanner.nextLine();
+
+                System.out.print("New Title: ");
+                String title = scanner.nextLine();
+
+                System.out.print("New Amount: ");
+                double amount = scanner.nextDouble();
+                scanner.nextLine();
+
+                System.out.print("New Category: ");
+                String category = scanner.nextLine();
+
+                service.updateExpense(id, title, amount, category);
             }
             else {
                 break;
