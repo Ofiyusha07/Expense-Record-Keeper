@@ -1,13 +1,44 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import java.util.Scanner;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+import service.ExpenseService;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ExpenseService service = new ExpenseService();
+
+        while (true) {
+            System.out.println("\n1. Add Expense");
+            System.out.println("2. View Expenses");
+            System.out.println("3. Delete Expense");
+            System.out.println("4. Exit");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+
+            if (choice == 1) {
+                System.out.print("Title: ");
+                String title = scanner.nextLine();
+
+                System.out.print("Amount: ");
+                double amount = scanner.nextDouble();
+                scanner.nextLine();
+
+                System.out.print("Category: ");
+                String category = scanner.nextLine();
+
+                service.addExpense(title, amount, category);
+            }
+            else if (choice == 2) {
+                service.viewExpenses();
+            }
+            else if (choice == 3) {
+                System.out.print("Enter ID: ");
+                int id = scanner.nextInt();
+                service.deleteExpense(id);
+            }
+            else {
+                break;
+            }
+        }
     }
 }
