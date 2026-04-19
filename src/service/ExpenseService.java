@@ -51,6 +51,14 @@ public class ExpenseService {
         FileManager.saveToFile(expenses);
     }
 
+    public void exportData() {
+        FileManager.exportToCSV(expenses);
+    }
+
+    public void importData() {
+        expenses = FileManager.importFromCSV();
+    }
+
     //  UPDATE
     public void updateExpense(int id, String newTitle, double newAmount, String newCategory) {
         for (Expense e : expenses) {
