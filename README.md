@@ -43,3 +43,5 @@ This screenshot shows how data is exported to CSV and then imported back into th
 
 This screenshot shows the CSV file created after exporting data. The file can be opened outside the program.
 <img width="1919" height="1199" alt="CSV in computer" src="https://github.com/user-attachments/assets/75446068-c38a-477a-9981-434c61c01a4d" />
+Presentation link:
+https://canva.link/gn3b5i9pe7xyzoj
