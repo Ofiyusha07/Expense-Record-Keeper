@@ -21,6 +21,6 @@ During development, one of the problems I faced was incorrect ID generation. Ini
 Another issue was input errors, for example when the user entered text instead of a number. This caused the program to crash. I fixed this by adding validation using Scanner methods such as hasNextInt() and hasNextDouble().
 
 To run the program, open the project in IntelliJ IDEA and run Main.java. Then use the menu in the console.
-![Add](screenshots/add.png)
-![Export](screenshots/export.png)
+<img width="1919" height="1199" alt="add and view opp" src="https://github.com/user-attachments/assets/e95233f2-5f71-47ae-911a-4b8d830a7a0b" />
+
 
