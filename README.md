@@ -23,3 +23,25 @@ Another issue was input errors, for example when the user entered text instead o
 To run the program, open the project in IntelliJ IDEA and run Main.java. Then use the menu in the console.
 
 
+This screenshot shows how a new expense is added and then displayed in the list.
+<img width="1919" height="1199" alt="add and view opp" src="https://github.com/user-attachments/assets/e95233f2-5f71-47ae-911a-4b8d830a7a0b" />
+
+This screenshot shows updating an existing expense and viewing the updated result.
+<img width="1919" height="1199" alt="update and view oppp" src="https://github.com/user-attachments/assets/a1d73fcd-cf1c-4fd3-9e84-d942c2fcca61" />
+
+This screenshot demonstrates deleting an expense and viewing the updated list.
+<img width="1919" height="1199" alt="delete and view opp" src="https://github.com/user-attachments/assets/54f4c536-e2a6-4d03-9ed4-4486edf546d6" />
+
+This screenshot shows how the program handles incorrect input and prevents crashes.
+<img width="1919" height="1199" alt="Error Handling" src="https://github.com/user-attachments/assets/9c98a595-ac74-4d54-86ae-bd2cc8e7d13c" />
+
+This screenshot shows how data is stored in the text file used for persistence.
+<img width="1919" height="1199" alt="saving in txt file" src="https://github.com/user-attachments/assets/487b10d2-26a5-4037-9b28-d521c17615ce" />
+
+This screenshot shows how data is exported to CSV and then imported back into the program.
+<img width="1919" height="1199" alt="import and export CSV" src="https://github.com/user-attachments/assets/75bf045c-1d2b-4ad2-8d53-8b62c4066b5a" />
+
+This screenshot shows the CSV file created after exporting data. The file can be opened outside the program.
+<img width="1919" height="1199" alt="CSV in computer" src="https://github.com/user-attachments/assets/75446068-c38a-477a-9981-434c61c01a4d" />
+Presentation link:
+https://canva.link/gn3b5i9pe7xyzoj
